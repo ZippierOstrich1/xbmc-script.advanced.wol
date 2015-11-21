@@ -45,5 +45,8 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     This allows you to set a fixed timespan, after which the addon just assumes, that the remote host is awake (to display success-notifies, launch other commands, etc.).</description>
     <disclaimer lang="en">Uses XBMC-builtin-command &quot;WakeOnLan&quot; to send the wakeup-packet, and the GNU-licensed &quot;python-ping&quot;-script to determine the status of the server. Please see the file &quot;ping.py&quot; for infos on the latter one.</disclaimer>
     <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=121142</forum>
+    <source>https://github.com/mandark/xbmc-script.advanced.wol</source>
   </extension>
 </addon>
