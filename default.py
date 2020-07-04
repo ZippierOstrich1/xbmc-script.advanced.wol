@@ -130,7 +130,7 @@ def main(isAutostart=False):
 			xbmc.sleep(1000)
 			xbmc.executebuiltin(sys.argv[1])
 			
-		# Initiate XBMC-library-updates, if we are in autostart and it is set in the settings.
+		# Initiate Kodi-library-updates, if we are in autostart and it is set in the settings.
 		if (isAutostart == True):
 		
 			if (((updateVideoLibraryAfterWol == "true") or (updateMusicLibraryAfterWol == "true")) and (libraryUpdatesDelay > 0)):
@@ -153,7 +153,7 @@ def main(isAutostart=False):
 			# Send Notification regarding continuous WOL-packets
 			xbmc.executebuiltin('XBMC.Notification("'+language(53020)+'","'+language(60008).replace("%continuousWolDelay%",str(continuousWolDelay))+'",5000,"'+iconSuccess+'")')
 		
-		# the previousTime-functionality to stop continuous WOL-packets after XBMC returns from standby was suggested by XBMC-forum-user "jandias" (THANKS!)
+		# the previousTime-functionality to stop continuous WOL-packets after Kodi returns from standby was suggested by XBMC-forum-user "jandias" (THANKS!)
 		previousTime = time.time()
 		countingSeconds = 0
 		while (not xbmc.abortRequested):
